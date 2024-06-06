@@ -1,11 +1,7 @@
-
 {
     "LogoPath": "/images/cs-logo.png",
-    "CompanyName": "Cooper Standard",
+    "CompanyName": "United Therapeutics",
     "Welcome": "Welcome to the Chatbot!",
-    "CompanyInformation": "Cooper Standard, headquartered in Northville, Mich. USA, with locations in 21 countries, is a leading global supplier of sealing and fluid handling systems and components. Utilizing our materials science and manufacturing expertise, we create innovative and sustainable engineered solutions for diverse transportation and industrial markets. Cooper Standard's approximately 23,000 employees are at the heart of our success, continuously improving our business and surrounding communities.",
-    "BackgroundImage": "/images/login_bg.jpeg",
-    "API_ENDPOINT": "us-central1-aiplatform.googleapis.com",
-    "PROJECT_ID": "gp-experimental-projects",
-    "MODEL_ID" : "chat-bison@001"
+    "CompanyInformation": "United Therapeutics Corporation is an American publicly traded biotechnology company and public benefit corporation listed on the NASDAQ under the symbol UTHR. It develops novel, life-extending technologies for patients in the areas of lung disease and organ manufacturing.",
+    "BackgroundImage": "/images/login_bg.jpeg"
 }

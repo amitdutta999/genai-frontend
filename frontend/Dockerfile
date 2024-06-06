@@ -1,14 +1,15 @@
-FROM node:14-slim
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-COPY . .
-
-ENV PYTHONPATH=${PYTHONPATH}:${PWD} 
-ENV PORT 4200
-
-RUN npm install -g serve
+FROM node:alpine
+# Set the working directory
+WORKDIR /app
+# Copy the package.json and package-lock.json files
+COPY package*.json ./
+# Install the dependencies
 RUN npm install
+# Copy the app files
+COPY . .
+# Build the app
 RUN npm run build
-CMD ["serve", "-s", "-l", "4200", "./build"]
-
-
+# Expose the port
+EXPOSE 3000
+# Run the app
+CMD ["npm", "start"]

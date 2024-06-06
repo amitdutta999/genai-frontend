@@ -32,7 +32,7 @@ const CompChatBody = () => (
                     backgroundColor: 'rgba(255, 255, 255, 0.8)',
                     padding: '20px',
                     borderRadius: '20px',
-                    marginTop: '100px', 
+                    marginTop: '10px', 
                   }}
                 >
                   <CompChatForm />

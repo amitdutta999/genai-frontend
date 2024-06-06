@@ -17,7 +17,7 @@ function App() {
     <AuthProvider>
     <BrowserRouter>
       <Routes>
-        <Route path="/" exact element={<HomePage />}></Route>
+        <Route path="/" exact element={<HomePage />}></Route> 
         <Route path="/dashboard" exact element={<Dashboard />}></Route>
         <Route path="/admin" exact element={<Admin />}></Route>
       </Routes>
