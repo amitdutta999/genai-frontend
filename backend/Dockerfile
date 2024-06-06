@@ -1,14 +1,20 @@
-FROM python:3.9
+# Use the official Node.js image as the base image
+FROM node:18-alpine
 
-WORKDIR /COOPER_STANDARD_CHAT_V1/backend/
+# Set the working directory
+WORKDIR /app
 
-COPY requirements.txt ./
+# Copy the package.json and package-lock.json files to the working directory
+COPY package*.json ./
 
-ENV PYTHONPATH=${PYTHONPATH}:${PWD} 
-ENV PORT 8080
+# Install the dependencies
+RUN npm install
 
-RUN pip3 install --no-cache-dir -r requirements.txt
-
+# Copy the rest of the application code to the working directory
 COPY . .
 
-CMD ["python3", "cooper_endpoint.py"]
+# Expose the port that the app runs on
+EXPOSE 3001
+
+# Command to run the application
+CMD [ "node", "server.js" ]
